@@ -1,0 +1,67 @@
+body {
+    margin: 0 auto; 
+    height: 100vh;
+    background: linear-gradient(145deg, #4587d2, #7d53b5); 
+    /* para criar o degrde da tela */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* mudar a letra */
+    display: flex;   /*para ser flexivel a body*/
+    justify-content: center; /*cenralizar horizontamente*/
+    align-items: center; /*centralizarverticamente*/
+}
+main{
+    padding: 90px 50px; /*aumentar o tamanho da caixa, separado pois não pode mandar o form inchar*/
+}
+main, form{   /*para main e form receberemas infotmações*/
+    background-color: #fff;
+    width: 300px;
+    /*para criaro quadrado*/
+   
+    display: flex; /*torna a tag para display flexivel*/
+    align-items: center;
+    flex-direction: column; /*para deixar os filhos alinhados, nesse caso vai ser coluna*/
+    gap: 40px;
+    border-radius: 10px; /*para deixar borda*/
+
+
+}
+.flex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+main div{
+    gap: 10px; /*para expassar as perguntas que estão embaixo*/
+}
+input{ /*vou mudar o input de todos*/
+    width: 100%;
+    padding: 12px; /*para deixar o espaçamnto das letras*/
+    border: none; /*para desaparecer a borda*/
+    border-bottom: 2px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+button{ /*para editar o body*/
+    width: 100%;
+    background: linear-gradient(145deg, #4587d2, #7d53b5);
+    color: #fff; 
+    border: none;
+    height: 50px; /*para aumentar o tamnho do botão*/
+    font-size: 16px;
+   margin-bottom: 46px; /*para aumentar o espaço da a linha*/
+
+}
+input:focus{
+    border-bottom: #7d53b5;
+}
+div span{
+    color: #999;
+    font-size: smaller; /*para reduzir a letra*/
+}
+div span a{
+    color: #2076d8;
+    text-decoration: none; /*para tirar o tracinho de baixo*/
+}
